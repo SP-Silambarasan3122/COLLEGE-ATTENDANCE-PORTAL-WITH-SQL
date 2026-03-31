@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>THANGAVELU ENGINEERING COLLEGE</h1>
+    <p>Attendance Management Dashboard</p>
+</div>
+
+<div class="container">
+
+    <!-- Attendance Form -->
+    <div class="card form-card">
+        <h2>📋 Mark Attendance</h2>
+
+        <form action="AttendanceServlet" method="post">
+            <input type="text" name="name" placeholder="Student Name" required>
+            <input type="text" name="regno" placeholder="Register Number" required>
+
+            <select name="status">
+                <option value="Present">✅ Present</option>
+                <option value="Absent">❌ Absent</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Stats -->
+    <div class="card stats-card">
+        <h2>📊 Today Status</h2>
+        <p>👨‍🎓 Total: 60</p>
+        <p>✅ Present: 45</p>
+        <p>❌ Absent: 15</p>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 THANGAVELU ENGINEERING COLLEGE</p>
+</footer>
+
+</body>
+</html>

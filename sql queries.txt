@@ -1,0 +1,9 @@
+CREATE DATABASE attendance_db;
+
+USE attendance_db;
+
+CREATE TABLE attendance (
+    name VARCHAR(50),
+    regno VARCHAR(20),
+    status VARCHAR(10)
+);
